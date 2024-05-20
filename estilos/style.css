@@ -1,18 +1,54 @@
-html{
-    background-color: rgb(240, 206, 161);
-}
+body{
+    background-image: url(../imagenes/iconos/gastrolat.png);
+    background-size: cover;
 
+}
 #sub{
     font-family: fantasy;
-    color: brown;
+    color: white;
     font-size: 40px;
     text-align: center;
-    text-shadow: 4px 4px 6px white;
+    text-shadow: 4px 4px 6px red;
+    
+
 }
 
 header{
-    background-color: rgb(225, 110, 69);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 0; 
+    position: relative;            
 }
+
+#menu{
+    position: absolute;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    left: 0;
+    bottom: 0px;
+}
+
+#registro{
+    position: absolute;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    right: 0;
+    bottom: 0px;
+
+}
+
+#registro img{
+    width: 120px;
+}
+
+#menu img{
+    width: 120px;     
+}
+
 
 header h1.titulo{
     font-family: fantasy;
@@ -24,9 +60,10 @@ header h1.titulo{
 
 header p.regis{
     position: absolute;
-    font-family: fantasy;   
-    right: 15px;
-    top: 64px;
+    font-family: fantasy;
+    right: 0;
+    bottom: 0;  
+  
     font-size: 57px;
     color: white;
     text-shadow:4px 4px 6px black;
