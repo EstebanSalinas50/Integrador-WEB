@@ -12,13 +12,35 @@ html{
 
 header{
     background-color: rgb(225, 110, 69);
-   font-family: fantasy;
-   font-size: 50px;
-   text-align: center;
-   text-shadow: 4px 4px 6px white;
-
 }
 
+header h1.titulo{
+    font-family: fantasy;
+   font-size: 100px;
+   text-align: center;
+   text-shadow: 4px 4px 6px black;
+   color: white;
+}
+
+header p.regis{
+    position: absolute;
+    font-family: fantasy;   
+    right: 15px;
+    top: 64px;
+    font-size: 57px;
+    color: white;
+    text-shadow:4px 4px 6px black;
+    
+}
+
+header p.menu  {  
+    position: absolute;
+    font-family: fantasy;   
+    margin-bottom: 15px;  
+    font-size: 57px;
+    color: white;
+    text-shadow:4px 4px 6px black;
+}
 
 #contenedor{
     display: flex;
