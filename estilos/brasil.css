@@ -2,7 +2,50 @@
 
 body{
 
-    background-image: url(../imagenes/comidas\ Brasileras/rio.jpg);
+    background-image: url(../imagenes/comidas\ Brasileras/brasilComida.jpg);
     background-size: cover;
+}
+.atras{
+    left: 38%;
+    top: calc(50% - 70px);
+}
+.siguiente{
+    right: -05%;
+    top: calc(50% - 70px);
+}
+.botones:hover{
+    cursor: pointer;
+    transform: scale(1.2,1.2);
+}
+.botones{
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50px;
+    background-color: rgba(o,o,o,.7);
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    color: #f3f0f0;
+    box-shadow: 0 0 0 10px rgba(255,255,255,6);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition:all .3s ease;
+}
+.contenedor{
+    padding-left: 30%;
+    width: 40%;
+    margin-top: 70px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 780px;
+}
 
+.contenedor img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
