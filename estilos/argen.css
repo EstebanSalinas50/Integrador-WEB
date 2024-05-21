@@ -1,4 +1,5 @@
 body{
-    background-image: url(../imagenes/comidas\ Argentinas/obe.jpg);
+    background-image: url(../imagenes/comidas\ Argentinas/fondoArg.png);
+    background-size: cover;
    
 }
