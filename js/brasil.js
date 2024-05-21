@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     contenedor.addEventListener('click', e => {
         let atras = contenedor.querySelector('.atras img'),
             siguiente = contenedor.querySelector('.siguiente img'),
-            img = contenedor.querySelector('imagenes'),
+            img = contenedor.querySelector('img'),
             tgt = e.target;
         if (tgt === atras) {
             if (cont > 0) {
