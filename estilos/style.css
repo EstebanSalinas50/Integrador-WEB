@@ -6,9 +6,9 @@ body{
 #sub{
     font-family: fantasy;
     color: white;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
-    text-shadow: 4px 4px 6px red;
+    text-shadow: 4px 4px 6px black;
     
 
 }
@@ -16,7 +16,7 @@ body{
 header{
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    padding: 0; 
+     
     position: relative;            
 }
 
@@ -70,11 +70,27 @@ header p.regis{
     
 }
 
-
-
-
 #contenedor{
     display: flex;
     gap: 120px;
     justify-content: center;
 }
+
+#top{
+
+    font-family: fantasy;
+    font-size: 57px;
+    text-shadow: 4px 4px 6px black;
+    color: white;
+    bottom: 0;
+}
+
+#top img {
+
+    height: 140px;
+    margin: 70px;
+    border: 40px;
+    
+}
+
+
