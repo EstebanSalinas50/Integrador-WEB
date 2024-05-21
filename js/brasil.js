@@ -1,5 +1,5 @@
-var imagenes = ['/imagenes/comidas Brasileras/quindim.jpg','/imagenes/comidas Brasileras/quindim1.png','/imagenes/comidas Brasileras/quindim2.png',
-'/imagenes/comidas Brasileras/quindim3.png','/imagenes/comidas Brasileras/quindim4.png'
+var imagenes = ['imagenes/comidas Brasiles/quindim.jpg','imagenes/comidas Brasileras/quindim1.png','imagenes/comidas Brasileras/quindim2.png',
+'imagenes/comidas Brasileras/quindim3.png','imagenes/comidas Brasileras/quindim4.png'
     ];
 
 document.addEventListener("DOMContentLoaded", (event) => {
@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     contenedor.addEventListener('click', e => {
         let atras = contenedor.querySelector('.atras'),
             siguiente = contenedor.querySelector('.siguiente'),
-            img = contenedor.querySelector('img'),
+            img = contenedor.querySelector('imegenes'),
             tgt = e.target;
         if (tgt === atras) {
             if (cont > 0) {
