@@ -1,5 +1,5 @@
-var imagenes = ['/imagenes/comidas Brasileras/quindim.jpg','/imagenes/comidas Brasileras/quindim1.png','/imagenes/comidas Brasileras/quindim2.png',
-'/imagenes/comidas Brasileras/quindim3.png','/imagenes/comidas Brasileras/quindim4.png'
+var imagenes = ['imagenes/comidas Brasiles/quindim.jpg','imagenes/comidas Brasileras/quindim1.png','imagenes/comidas Brasileras/quindim2.png',
+'imagenes/comidas Brasileras/quindim3.png','imagenes/comidas Brasileras/quindim4.png'
     ];
 
 document.addEventListener("DOMContentLoaded", (event) => {
