@@ -3,3 +3,21 @@ body{
     background-size: cover;
    
 }
+
+h1{
+    font-family: fantasy;
+    font-size: 140px;
+    text-align: center;
+    color: skyblue;
+    text-shadow: 4px 4px 6px white ;
+    background-color: rgba(226, 224, 224, 0.711);
+
+}
+
+
+#Asado p{
+ font-family: fantasy;
+ font-size: 20px;
+ color: white;
+ text-shadow: 4px 4px 6px black ;
+}
