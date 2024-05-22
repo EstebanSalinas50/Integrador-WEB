@@ -1,4 +1,23 @@
 body{
-    background-image: url(../imagenes/comidas\ Argentinas/obe.jpg);
+    background-image: url(../imagenes/comidas\ Argentinas/fondito.png);
+    background-size: cover;
    
+}
+
+h1{
+    font-family: fantasy;
+    font-size: 140px;
+    text-align: center;
+    color: #08d3e9;
+    text-shadow: 4px 4px 6px white ;
+    background-color: rgba(226, 224, 224, 0.711);
+
+}
+
+
+#Asado p{
+ font-family: fantasy;
+ font-size: 20px;
+ color: black;
+ text-shadow: 4px 4px 6px white;
 }
