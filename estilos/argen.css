@@ -2,6 +2,7 @@ body{
     background-image: url(../imagenes/comidas\ Argentinas/fondito.png);
     background-size: cover; 
     background-attachment: fixed;
+    background-repeat: no-repeat;
      
 }
 
