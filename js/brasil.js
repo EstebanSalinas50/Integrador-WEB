@@ -6,7 +6,7 @@ var imagenes = [
     'imagenes/comidas Brasileras/quindim4.png'
 ];                      
 let cont=0;
-function carrusel(contenedor){
+function carrusel(contenedor) {
 
     contenedor.addEventListener('click',e => {
         let atras=contenedor.querySelector('.atras img'),
