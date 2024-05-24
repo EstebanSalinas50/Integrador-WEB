@@ -38,11 +38,11 @@ document.addEventListener("DOMContentLoaded", ()=>{
 );
 
 var imagenesBrigadeiro = [
-    'imagenes/comidas Brasileras/bragadeiro1.png',
-    'imagenes/comidas Brasileras/bragadeiro2.png',
-    'imagenes/comidas Brasileras/bragadeiro3.png',
-    'imagenes/comidas Brasileras/bragadeiro4.png',
-    'imagenes/comidas Brasileras/bragadeiro5.png'
+    'imagenes/comidas Brasileras/bragadeiro.png',
+    'imagenes/comidas Brasileras/bragadeiro.png',
+    'imagenes/comidas Brasileras/bragadeiro.png',
+    'imagenes/comidas Brasileras/bragadeiro.png',
+    'imagenes/comidas Brasileras/bragadeiro.png'
 ];                      
 let contador=0;
 function carruselBrigadeiro(brigadeiroBrasil) {
