@@ -38,17 +38,17 @@ document.addEventListener("DOMContentLoaded", ()=>{
 );
 
 var imagenesBrigadeiro = [
-    'imagenes/comidas Brasileras/bragadeiro.png',
-    'imagenes/comidas Brasileras/bragadeiro.png',
-    'imagenes/comidas Brasileras/bragadeiro.png',
-    'imagenes/comidas Brasileras/bragadeiro.png',
-    'imagenes/comidas Brasileras/bragadeiro.png'
+    'imagenes/comidas Brasileras/brigadeiro1.png',
+    'imagenes/comidas Brasileras/brigadeiro2.png',
+    'imagenes/comidas Brasileras/brigadeiro3.png',
+    'imagenes/comidas Brasileras/brigadeiro4.png',
+    'imagenes/comidas Brasileras/brigadeiro5.png'
 ];                      
 let contador=0;
 function carruselBrigadeiro(brigadeiroBrasil) {
     brigadeiroBrasil.addEventListener('click', e => {
         let atras = brigadeiroBrasil.querySelector('.atras img'),
-            adelante = brigadeiroBrasil.querySelector('.adelante img'),
+            adelante = brigadeiroBrasil.querySelector('.siguiente img'),
             img = brigadeiroBrasil.querySelector('#imagen'),
             target = e.target;
 
