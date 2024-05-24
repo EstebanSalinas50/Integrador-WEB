@@ -1,7 +1,6 @@
 body{
     background-image: url(../imagenes/comidas\ Argentinas/fondito.png);
-    background-size: cover;
-   
+    background-size: cover;  
 }
 
 h1{
@@ -11,7 +10,8 @@ h1{
     color: #08d3e9;
     text-shadow: 4px 4px 6px white ;
     background-color: rgba(226, 224, 224, 0.711);
-
+    margin: 2px;
+    padding: 2px;
 }
 
 
@@ -19,5 +19,60 @@ h1{
  font-family: fantasy;
  font-size: 20px;
  color: black;
- text-shadow: 4px 4px 6px white;
+ text-shadow: 2px 2px 6px white;
+ background-color: rgba(226, 224, 224, 0.711);
+}
+
+.contenedor {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+ #imagen{
+    width: 700px;
+    height: 450px;
+}
+
+
+.atras{
+    left: 530px;
+   top: 30%;
+}
+.adelante{
+    right: -2%;
+    top: 30%;
+}
+
+.botones:hover{
+    cursor: pointer;
+    transform: scale(1.2,1.2);
+
+}
+.botones{
+   font-size: 30px;
+   width: 70px;
+   height: 70px;
+   line-height: 70px;
+   border-radius: 50px;
+   background-color: rgba(0,0,0,.7);
+   text-align: center;
+   font-weight: bold;
+   position: absolute;
+   box-shadow: 0 0 0 10px rgba(226, 224, 224, 0.711);
+   color: white;
+   -webkit-transition: all .3s ease;
+   -o-transition: all .3s ease;
+   transition:all .3s ease;
+
+}
+
+.contenedor{
+    padding-left: 30%;
+    width: 40%;
+    margin-top: 70px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 780px;
 }
