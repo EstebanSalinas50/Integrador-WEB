@@ -47,6 +47,7 @@ h2{
  #imagen{
     width: 700px;
     height: 450px;
+    border: 5px solid black;
 }
 
 
@@ -91,4 +92,16 @@ h2{
     display: flex;
     justify-content: center;
     height: 780px;
+}
+.contenedor2{
+    padding-left: 30%; 
+    width: 40%;
+    margin-top: 70px;
+    margin-bottom: -300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 780px;
+    
+
 }

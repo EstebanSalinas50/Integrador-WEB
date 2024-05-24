@@ -74,3 +74,40 @@ document.addEventListener("DOMContentLoaded", () => {
 }
 );
 
+//--------------------------------------------
+var imagen3=['imagenes/comidas Argentinas/empanada1.jpg',
+            'imagenes/comidas Argentinas/empanada2.jpg',
+            'imagenes/comidas Argentinas/empanada3.jpg']
+var cont=0;  
+function carrusel2(contenedor2) {
+
+    contenedor2.addEventListener('click', e => {
+        let atras = contenedor2.querySelector('.atras'),
+            adelante = contenedor2.querySelector('.adelante'),
+            img = contenedor2.querySelector('#imagen'),
+            target = e.target;
+
+        if (target === atras) {
+            if (cont > 0) {
+                cont--;
+            } else {
+                cont = imagen3.length - 1;
+            }
+            img.src = imagen3[cont];
+        } else if (target === adelante) {
+            if (cont < imagen3.length - 1) {
+                cont++;
+            } else {
+                cont = 0;
+            }
+            img.src = imagen3[cont];
+        }
+    }
+    )
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    let contenedor2 = document.querySelector('.contenedor2');  
+    carrusel2(contenedor2);
+}
+);
