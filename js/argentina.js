@@ -111,3 +111,40 @@ document.addEventListener("DOMContentLoaded", () => {
     carrusel2(contenedor2);
 }
 );
+//---------------------------------------
+var imagen4=['imagenes/comidas Argentinas/locro1.jpg',
+            'imagenes/comidas Argentinas/locro2.jpg',
+            'imagenes/comidas Argentinas/locro3.jpg']
+ var cont=0;
+ 
+ function carrusel3(contenedor3) {
+
+    contenedor3.addEventListener('click', e => {
+        let atras = contenedor3.querySelector('.atras'),
+            adelante = contenedor3.querySelector('.adelante'),
+            img = contenedor3.querySelector('#imagen'),
+            target = e.target;
+
+        if (target === atras) {
+            if (cont > 0) {
+                cont--;
+            } else {
+                cont = imagen4.length - 1;
+            }
+            img.src = imagen4[cont];
+        } else if (target === adelante) {
+            if (cont < imagen4.length - 1) {
+                cont++;
+            } else {
+                cont = 0;
+            }
+            img.src = imagen4[cont];
+        }
+    }
+    )
+}
+document.addEventListener("DOMContentLoaded", () => {
+    let contenedor3 = document.querySelector('.contenedor3');  
+    carrusel3(contenedor3);
+}
+);

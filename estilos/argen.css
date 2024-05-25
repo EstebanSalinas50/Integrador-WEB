@@ -102,6 +102,25 @@ h2{
     display: flex;
     justify-content: center;
     height: 780px;
-    
+}
 
+.contenedor3{
+    padding-left: 30%; 
+    width: 40%;
+    margin-top: 70px;
+    margin-bottom: -300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 780px;
+}
+.contenedor4{
+    padding-left: 30%; 
+    width: 40%;
+    margin-top: 70px;
+    margin-bottom: -300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 780px;
 }
