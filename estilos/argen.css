@@ -2,6 +2,7 @@ body{
     background-image: url(../imagenes/comidas\ Argentinas/fondito.png);
     background-size: cover; 
     background-attachment: fixed;
+    background-repeat: no-repeat;
      
 }
 
@@ -30,6 +31,19 @@ h2{
  text-shadow: 2px 2px 6px white;
  background-color: rgba(226, 224, 224, 0.711);
 }
+ul {
+    list-style-type: none;
+    padding: 0;
+} 
+
+li {
+    font-weight: bold;
+    background-color: rgba(0,0,0,rgba(o,o,o,.7));
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
 .contenedor{
     padding-left: 30%; 
     width: 40%;
@@ -46,6 +60,7 @@ h2{
  #imagen{
     width: 700px;
     height: 450px;
+    border: 5px solid black;
 }
 
 
@@ -80,6 +95,23 @@ h2{
    transition:all .3s ease;
 
 }
+.ingres{
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #08d3e9;
+    max-width: max-content;
+    text-shadow: 4px 4px 6px white ;
+    background-color: rgba(226, 224, 224, 0.711);
+    margin: 0 auto;
+   
+}
+h3{
+    font-size: 2em;
+    font-weight: bold;
+    color: #333333;
+}
 
 .contenedor1{
     padding-left: 30%; 
@@ -91,3 +123,35 @@ h2{
     justify-content: center;
     height: 780px;
 }
+.contenedor2{
+    padding-left: 30%; 
+    width: 40%;
+    margin-top: 70px;
+    margin-bottom: -300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 780px;
+}
+
+.contenedor3{
+    padding-left: 30%; 
+    width: 40%;
+    margin-top: 70px;
+    margin-bottom: -300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 780px;
+}
+.contenedor4{
+    padding-left: 30%; 
+    width: 40%;
+    margin-top: 70px;
+    margin-bottom: -300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 780px;
+}
+

@@ -1,4 +1,147 @@
 body{
     background-image: url(../imagenes/comidas\ Peruanas/peruanas.png);
     background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+h1{
+    font-family: fantasy;
+    font-size: 140px;
+    text-align: center;
+    color: red;
+    text-shadow: 4px 4px 6px white ;
+    background-color: rgba(226, 224, 224, 0.711);
+    margin: 2px;
+    padding: 2px;
+}
+h2{
+    font-size: 60px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    text-shadow: 2px 2px 6px white;
+}
+h3{
+    font-size: 2em;
+    font-weight: bold;
+    color: #333333;
+}
+
+
+.textos p{
+    font-family: fantasy;
+    font-size: 20px;
+    color: black;
+    text-shadow: 2px 2px 6px white;
+    background-color: rgba(226, 224, 224, 0.711);
+   }
+   .contenedor0{
+    padding-left: 30%; 
+    width: 40%;
+    margin-top: 70px;
+    margin-bottom: -300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 780px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+} 
+
+li {
+    font-weight: bold;
+    background-color: rgba(0,0,0,rgba(o,o,o,.7));
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+ #imagen{
+    width: 700px;
+    height: 450px;
+    border: 5px solid black;
+}
+
+.atras{
+    top: 170px;
+    left: 550px;
+ }
+ .adelante{
+     top: 170px;
+     right: -5px;
+ }
+
+ .botones{
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50px;
+    background-color: rgba(0,0,0,.7);
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    box-shadow: 0 0 0 10px rgba(226, 224, 224, 0.711);
+    color: white;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition:all .3s ease;
+ 
+ }
+ .ingres{
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px red;
+    max-width: max-content;
+    text-shadow: 4px 4px 6px white ;
+    background-color: rgba(226, 224, 224, 0.711);
+    margin: 0 auto;
+   
+}
+.contenedor1{
+    padding-left: 30%; 
+    width: 40%;
+    margin-top: 70px;
+    margin-bottom: -300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 780px;
+}
+.contenedor2{
+    padding-left: 30%; 
+    width: 40%;
+    margin-top: 70px;
+    margin-bottom: -300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 780px;
+}
+
+.contenedor3{
+    padding-left: 30%; 
+    width: 40%;
+    margin-top: 70px;
+    margin-bottom: -300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 780px;
+}
+.contenedor4{
+    padding-left: 30%; 
+    width: 40%;
+    margin-top: 70px;
+    margin-bottom: -300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 780px;
 }
