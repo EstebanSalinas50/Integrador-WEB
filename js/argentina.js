@@ -148,3 +148,40 @@ document.addEventListener("DOMContentLoaded", () => {
     carrusel3(contenedor3);
 }
 );
+
+//--------------------------------------
+var imagen5=['imagenes/comidas Argentinas/milanga1.jpg',
+             'imagenes/comidas Argentinas/milanga2.jpg',
+             'imagenes/comidas Argentinas/milanga3.jpg']
+var cont=0;
+function carrusel4(contenedor4) {
+
+    contenedor4.addEventListener('click', e => {
+        let atras = contenedor4.querySelector('.atras'),
+            adelante = contenedor4.querySelector('.adelante'),
+            img = contenedor4.querySelector('#imagen'),
+            target = e.target;
+
+        if (target === atras) {
+            if (cont > 0) {
+                cont--;
+            } else {
+                cont = imagen5.length - 1;
+            }
+            img.src = imagen5[cont];
+        } else if (target === adelante) {
+            if (cont < imagen5.length - 1) {
+                cont++;
+            } else {
+                cont = 0;
+            }
+            img.src = imagen5[cont];
+        }
+    }
+    )
+}
+document.addEventListener("DOMContentLoaded", () => {
+    let contenedor4 = document.querySelector('.contenedor4');  
+    carrusel4(contenedor4);
+}
+);
