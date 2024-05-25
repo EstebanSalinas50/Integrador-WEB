@@ -104,6 +104,8 @@ li {
     max-width: max-content;
     text-shadow: 4px 4px 6px white ;
     background-color: rgba(226, 224, 224, 0.711);
+    margin: 0 auto;
+   
 }
 h3{
     font-size: 2em;
@@ -152,3 +154,4 @@ h3{
     justify-content: center;
     height: 780px;
 }
+
