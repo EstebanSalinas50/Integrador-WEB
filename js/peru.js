@@ -111,3 +111,71 @@ document.addEventListener("DOMContentLoaded", () => {
     carrusel2(contenedor2);
 }
 );
+//-------------------------------
+var imagenes4=['imagenes/comidas Peruanas/lomo1.jpg','imagenes/comidas Peruanas/lomo2.jpg','imagenes/comidas Peruanas/lomo3.jpg'];
+var cont3=0;
+function carrusel3(contenedor3) {
+
+    contenedor3.addEventListener('click', e => {
+        let atras = contenedor3.querySelector('.atras'),
+            adelante = contenedor3.querySelector('.adelante'),
+            img = contenedor3.querySelector('#imagen'),
+            target = e.target;
+
+        if (target === atras) {
+            if (cont3 > 0) {
+                cont3--;
+            } else {
+                cont3 = imagenes4.length - 1;
+            }
+            img.src = imagenes4[cont3];
+        } else if (target === adelante) {
+            if (cont3 < imagenes4.length - 1) {
+                cont3++;
+            } else {
+                cont3 = 0;
+            }
+            img.src = imagenes4[cont3];
+        }
+    }
+    )
+}
+document.addEventListener("DOMContentLoaded", () => {
+    let contenedor3 = document.querySelector('.contenedor3');  
+    carrusel3(contenedor3);
+}
+);
+//--------------------------
+var imagenes5=['imagenes/comidas Peruanas/aji1.jpg','imagenes/comidas Peruanas/aji2.jpg','imagenes/comidas Peruanas/aji3.jpg'];
+var cont4=0;
+function carrusel4(contenedor4) {
+
+    contenedor4.addEventListener('click', e => {
+        let atras = contenedor4.querySelector('.atras'),
+            adelante = contenedor4.querySelector('.adelante'),
+            img = contenedor4.querySelector('#imagen'),
+            target = e.target;
+
+        if (target === atras) {
+            if (cont4 > 0) {
+                cont4--;
+            } else {
+                cont4 = imagenes5.length - 1;
+            }
+            img.src = imagenes5[cont4];
+        } else if (target === adelante) {
+            if (cont4 < imagenes5.length - 1) {
+                cont4++;
+            } else {
+                cont4 = 0;
+            }
+            img.src = imagenes5[cont4];
+        }
+    }
+    )
+}
+document.addEventListener("DOMContentLoaded", () => {
+    let contenedor4 = document.querySelector('.contenedor4');  
+    carrusel4(contenedor4);
+}
+);
