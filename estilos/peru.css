@@ -74,6 +74,10 @@ li {
      top: 170px;
      right: -5px;
  }
+ .botones:hover{
+    cursor: pointer;
+    transform: scale(1.2,1.2);
+}
 
  .botones{
     font-size: 30px;
