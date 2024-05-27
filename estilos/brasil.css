@@ -15,6 +15,18 @@ body{
     text-shadow: 4px 4px 6px white ;
     background-color: rgba(226, 224, 224, 0.711);
 }
+h2{
+
+    font-family: fantasy;
+    font-size: 140px;
+    text-align: center;
+    color: red;
+    text-shadow: 4px 4px 6px white ;
+    background-color: rgba(226, 224, 224, 0.711);
+    margin: 2px;
+    padding: 2px;
+
+}
 .titu{
 
     font-size: 3em;
