@@ -91,9 +91,7 @@ li {
     position: absolute;
     box-shadow: 0 0 0 10px rgba(226, 224, 224, 0.711);
     color: white;
-    -webkit-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition:all .3s ease;
+   
  
  }
  .ingres{

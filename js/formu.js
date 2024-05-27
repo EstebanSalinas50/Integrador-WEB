@@ -6,7 +6,9 @@ const expcontra = /^.{8,}$/;
 function validar() {
     
     const spans = document.querySelectorAll('.error');
-    spans.forEach(span => span.remove());
+    for (let i = 0; i < spans.length; i++) {
+        spans[i].remove();
+    }
     document.getElementById('resultados').innerHTML = '';
 
     let errores = [];
@@ -21,6 +23,7 @@ function validar() {
         spanError.textContent = "Ingrese datos válidos";
         spanError.className = 'error';
         nombre.insertAdjacentElement('afterend', spanError);
+        errores.push("Nombre vacío");
     }
 
     if (!expNombre.test(nombre.value)) {    
@@ -28,20 +31,23 @@ function validar() {
         spanError.textContent = "El nombre tiene caracteres no deseados";
         spanError.className = 'error';
         nombre.insertAdjacentElement('afterend', spanError);
+        errores.push("Nombre inválido");
     }
 
     if (!exptel.test(telefono.value)) {
         const spanError = document.createElement('span');
-        spanError.textContent = "El número de teléfono debe contener  8 dígitos";
+        spanError.textContent = "El numero de telefono debe contener 8 digitos";
         spanError.className = 'error';
         telefono.insertAdjacentElement('afterend', spanError);
+        errores.push("Telefono invalido");
     }
 
     if (!expcorreo.test(correo.value)) {
         const spanError = document.createElement('span');
-        spanError.textContent = "Correo inválido";
+        spanError.textContent = "Correo invalido";
         spanError.className = 'error';
         correo.insertAdjacentElement('afterend', spanError);
+        errores.push("Correo invalido");
     }
 
     if (!expcontra.test(contraseña.value)) {
@@ -49,6 +55,7 @@ function validar() {
         spanError.textContent = "La contraseña debe tener al menos 8 caracteres";
         spanError.className = 'error';
         contraseña.insertAdjacentElement('afterend', spanError);
+        errores.push("Contraseña invalida");
     }
 
     if (errores.length > 0) {
@@ -68,7 +75,7 @@ function validar() {
     resultadosDiv.appendChild(telefonoElemento);
 
     const correoElemento = document.createElement('p');
-    correoElemento.textContent = `Correo Electrónico: ${correo.value}`;
+    correoElemento.textContent = `Correo Electronico: ${correo.value}`;
     correoElemento.className = 'resultado';
     resultadosDiv.appendChild(correoElemento);
 
@@ -77,8 +84,9 @@ function validar() {
     contraseñaElemento.className = 'resultado';
     resultadosDiv.appendChild(contraseñaElemento);
 
+    const mensaje = `Correo Registrado! Bienvenido ${nombre.value}!`;
+    resultadosDiv.innerText = mensaje;
+    document.querySelector('form').reset();
+
     return false;
-}
-
-
-
+};
