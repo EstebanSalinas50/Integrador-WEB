@@ -31,9 +31,8 @@ function validar() {
     }
 
     if (!exptel.test(telefono.value)) {
-        errores.push("El número de teléfono debe contener exactamente 8 dígitos");
         const spanError = document.createElement('span');
-        spanError.textContent = "El número de teléfono debe contener exactamente 8 dígitos";
+        spanError.textContent = "El número de teléfono debe contener  8 dígitos";
         spanError.className = 'error';
         telefono.insertAdjacentElement('afterend', spanError);
     }
