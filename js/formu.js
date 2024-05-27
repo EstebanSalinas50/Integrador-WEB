@@ -1,14 +1,12 @@
-
-
 const expNombre = /^[a-zA-Z]{0,13}$/;
-
 const exptel = /^[0-9]{8}$/;
-
 const expcorreo = /^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/;
+const expcontra = /^.{8,}$/;
 
 function validar() {
-
-    document.getElementById('errores').innerHTML = '';
+    
+    const spans = document.querySelectorAll('.error');
+    spans.forEach(span => span.remove());
     document.getElementById('resultados').innerHTML = '';
 
     let errores = [];
@@ -16,35 +14,45 @@ function validar() {
     const nombre = document.getElementById('nombre');
     const telefono = document.getElementById('tele');
     const correo = document.getElementById('correo');
-
-    console.log(nombre);
+    const contraseña = document.getElementById('contraseña');
 
     if (nombre.value == "") {
-        errores.push("El nombre esta vacio");
+        const spanError = document.createElement('span');
+        spanError.textContent = "Ingrese datos válidos";
+        spanError.className = 'error';
+        nombre.insertAdjacentElement('afterend', spanError);
     }
-    if (nombre.value.length > 13) {
-        errores.push("el nombre supera los caracteres deseados")
-    }
-    if (!expNombre.test(nombre.value)) {
-        errores.push("El nombre tiene caracteres no deseados")
+
+    if (!expNombre.test(nombre.value)) {    
+        const spanError = document.createElement('span');
+        spanError.textContent = "El nombre tiene caracteres no deseados";
+        spanError.className = 'error';
+        nombre.insertAdjacentElement('afterend', spanError);
     }
 
     if (!exptel.test(telefono.value)) {
         errores.push("El número de teléfono debe contener exactamente 8 dígitos");
-    }
-    if (correo.value == "") {
-        errores.push("Correo invalido")
+        const spanError = document.createElement('span');
+        spanError.textContent = "El número de teléfono debe contener exactamente 8 dígitos";
+        spanError.className = 'error';
+        telefono.insertAdjacentElement('afterend', spanError);
     }
 
+    if (!expcorreo.test(correo.value)) {
+        const spanError = document.createElement('span');
+        spanError.textContent = "Correo inválido";
+        spanError.className = 'error';
+        correo.insertAdjacentElement('afterend', spanError);
+    }
+
+    if (!expcontra.test(contraseña.value)) {
+        const spanError = document.createElement('span');
+        spanError.textContent = "La contraseña debe tener al menos 8 caracteres";
+        spanError.className = 'error';
+        contraseña.insertAdjacentElement('afterend', spanError);
+    }
 
     if (errores.length > 0) {
-        const erroresDiv = document.getElementById('errores');
-        for (let i = 0; i < errores.length; i++) {
-            const elemento = document.createElement('p');
-            elemento.textContent = errores[i];
-            elemento.className = 'error';
-            erroresDiv.appendChild(elemento);
-        }
         return false;
     }
 
@@ -52,26 +60,26 @@ function validar() {
 
     const nombreElemento = document.createElement('p');
     nombreElemento.textContent = `Nombre: ${nombre.value}`;
-    nombreElemento.className='resultado'    
+    nombreElemento.className = 'resultado';
     resultadosDiv.appendChild(nombreElemento);
 
     const telefonoElemento = document.createElement('p');
     telefonoElemento.textContent = `Teléfono: ${telefono.value}`;
-    telefonoElemento.className='resultado' 
+    telefonoElemento.className = 'resultado';
     resultadosDiv.appendChild(telefonoElemento);
 
     const correoElemento = document.createElement('p');
     correoElemento.textContent = `Correo Electrónico: ${correo.value}`;
-    correoElemento.className='resultado' 
+    correoElemento.className = 'resultado';
     resultadosDiv.appendChild(correoElemento);
 
+    const contraseñaElemento = document.createElement('p');
+    contraseñaElemento.textContent = `Contraseña: ${contraseña.value}`;
+    contraseñaElemento.className = 'resultado';
+    resultadosDiv.appendChild(contraseñaElemento);
+
     return false;
-
-};
-
-
-
-
+}
 
 
 
